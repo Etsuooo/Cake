@@ -1,6 +1,7 @@
 :root{
     --border-color:rgb(212, 211, 211);
     --bgcolor:#F2F2F2;
+    --button-color:#d13a07;
     --primary-color:#383838;
     --secondary-color:#CDBE78;
     --border-image:#d3d3d3;
@@ -15,7 +16,7 @@
     box-sizing: border-box ;
 }
 button{
-    background-color: var(--primary-color);
+    background-color: var(--button-color);
     border-color: transparent;
     color: var(--bgcolor);
 }
@@ -49,6 +50,17 @@ body{
 .flex-row{
     flex-direction: row;
 }
+#chitiet {
+    font-size: 1.25rem;
+    text-align: left;
+}
+#chitietsp {
+    font-size: 0.55rem;
+    text-align: left;
+}
+/* #chitiettitle {
+    color: rgb(226, 133, 45);
+} */
 .top{
     position: sticky;
     inset:0 ;
@@ -83,6 +95,7 @@ body{
     height: 100%;
     box-sizing: border-box;
     align-items: center;
+    border-bottom:2px solid rgb(233, 233, 233) ;
 }
 .navbar a{
     margin: 10px;
@@ -98,6 +111,15 @@ body{
 .navbar ul li a{
     text-decoration: none;
     font-size: 1.125rem;
+}
+.navbar ul li:hover a {
+    color: rgb(226, 133, 45);
+}
+#underline {
+    text-decoration: none;
+}
+#underline:hover {
+    color: rgb(226, 133, 45);
 }
 .danhmuc{
     position: relative;
@@ -170,10 +192,13 @@ body{
 .logo img{
     width: 100%;
     font-size: 0%;
+    height: 650px;
 }
 .left{
-width: 250px;
-height: 500px;
+    width: 250px;
+    height: 500px;
+    padding-top: 10px;
+    height: fit-content;
 }
 .left aside{
     height: auto;
@@ -235,8 +260,12 @@ height: 500px;
 }
 .chitiet-img{
     max-width: 360px;
+    padding: 10px;
+}
+.chitiet-img a {
     overflow: hidden;
-    padding: 30px;
+    display: block;
+    border: 5px var(--border-image) solid;
 }
 .chitiet-img:hover img{
     transform: scale(1.5);
@@ -244,7 +273,6 @@ height: 500px;
 }
 .chitiet-img img{
     width: 100%;
-    border: 5px var(--border-image) solid;
     transition: all 150ms ease-in;
 }
 .chitiet-text{
@@ -263,7 +291,7 @@ height: 500px;
 .chitiet-text button{
     width: 60%;
     height: 10%;
-    margin-top: 50px;
+    margin-bottom: 40px;
 }
 .product-footer{
 
@@ -276,6 +304,7 @@ height: 500px;
     margin: 10px;  
 }
 .product-footer-text{
+    text-size-adjust: 20px;
     text-align: left;
 }
 @media only screen and (max-width:780px) {

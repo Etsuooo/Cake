@@ -104,6 +104,15 @@ body{
     text-decoration: none;
     font-size: 1.125rem;
 }
+.navbar ul li:hover a {
+    color: rgb(226, 133, 45);
+}
+#underline {
+    text-decoration: none;
+}
+#underline:hover {
+    color: rgb(226, 133, 45);
+}
 .danhmuc{
     position: relative;
 }
@@ -176,10 +185,12 @@ body{
 .logo img{
     width: 100%;
     font-size: 0%;
+    height: 650px;
 }
 .left{
 width: 250px;
 height: fit-content;
+padding-top: 10px;
 }
 .left aside{
     height: auto;
