@@ -7,6 +7,9 @@
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
 }
+.relative{
+    position: relative;
+}
 *{
     color: var(--primary-color);
     box-sizing: border-box ;
@@ -97,6 +100,49 @@ body{
     font-size: 1.125rem
     ;
 }
+.danhmuc{
+    position: relative;
+}
+.danhmuc .danhmucnho{
+    position: absolute;
+    top:100%;
+    background-color: var(--bgcolor); 
+    min-width: 100%;
+    display: none;
+}
+.danhmuc:hover .danhmucnho{
+    display: block;
+}
+.danhmuc .danhmucnho > li{
+    padding: .625rem;
+
+    margin:0;
+}
+.danhmuc .danhmucnho > li:hover{
+    background-color: #383838;
+    color: var(--bgcolor);  
+}
+.danhmucthem{
+    position: absolute;
+    left: 100%;
+    top: 0px;
+    min-height: 100%;
+    background-color: var(--bgcolor);
+    display: none;
+}
+.danhmucthem > li{
+    padding: 10px !important;
+    margin: 0px !important;
+    min-height: 100%;
+    min-width: max-content ;
+}
+.danhmucnho > li:hover .danhmucthem{ 
+    display: flex;
+}
+.danhmucnho .danhmucthem > li:hover{
+    background-color: #383838;
+    color: var(--bgcolor);  
+}
 .item-center{
     align-items: center;
 }
@@ -110,6 +156,9 @@ body{
 .content{
     min-width: 0px;
     display: flex;
+}
+#logonho{
+    margin-left: 15px;
 }
 .logo{
     font-size: 0px;
